@@ -1,0 +1,364 @@
+* {
+    font-family: 'Roboto', sans-serif;
+      
+}
+
+.fondo {
+    background-image: url("../imagenes/pattern.png");
+}
+
+.navbar {
+    background-color: rgb(255, 255, 255);
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    top: 0px;
+    grid-area: header;
+
+}
+
+.menu {
+    display: inline-block;
+    width: 80%;
+        
+}
+
+nav ul {
+    list-style: none;
+    text-align: right;
+
+}
+
+nav li {
+    display: inline-block;
+    position: relative;
+
+}
+
+nav li a {
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0px 10px;
+    color: black;
+       
+}
+
+nav li a:hover {
+    color: rgb(116, 112, 112);
+}
+
+nav ul ul {
+    position: absolute;
+    display: none;
+    text-align: left;
+    
+}
+
+nav ul ul li {
+    display: block;
+    
+}
+
+nav ul li:hover ul {
+    display: block;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 10px 10px 10px 0px;
+    
+}
+
+nav ul li ul li a {
+    color: rgb(0, 0, 0);
+        
+}
+
+#slider {
+    width: 100%;
+
+}
+
+.titulos {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3rem;
+    padding-left: 50px;
+}
+
+#tituloHome {
+    margin-top: 50px;
+}
+
+.espaciado {
+    letter-spacing: 5px;
+}
+ 
+.subtitulos {
+    font-family: 'Permanent Marker', cursive;
+    padding-left: 50px;
+}
+
+.bodydeco {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-areas: 
+    "prod01 prod02 prod03"
+    "prod04 prod05 prod06"
+    "instructivo instructivo instructivo";
+    padding: 0px 15px 0px 15px;
+        
+}
+
+#prod01 {
+    grid-area: prod01;
+}
+
+#prod02 {
+    grid-area: prod02;
+}
+
+#prod03 {
+    grid-area: prod03;
+}
+
+#prod04 {
+    grid-area: prod04;
+}
+
+#prod05 {
+    grid-area: prod05;
+}
+
+#prod06 {
+    grid-area: prod06;
+}
+
+.galeria img {
+    width: 100%;
+}
+
+#instructivo {
+    grid-area: instructivo;
+    justify-self: stretch;
+    
+}
+
+#intro {
+    padding: 0px 50px 50px 50px;
+}
+
+#productos {
+    background-image: linear-gradient(to bottom,rgb(51, 54, 59), rgb(255, 255, 255));
+}
+
+.flexboxRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flexboxCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+article h2 {
+    font-size: 1.5em;
+    text-align: left;
+    padding: 50px 0px 15px 50px;
+    color: rgb(255, 255, 255);
+    
+}
+
+article p {
+    padding: 15px 50px 15px 50px;
+    text-align: justify;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+article img {
+    display: block;
+    margin: auto;
+     
+}
+
+form {
+    margin: 0px 50px 0px 50px;
+}
+
+form input {
+    width: 50%;
+}
+
+table {
+    background-color: rgb(236, 185, 50);
+    padding: 10px 25px 10px 25px; 
+    margin: 0px 50px 0px 50px;
+    text-transform: uppercase; 
+    border-radius: 20px;
+    text-align: center;
+    
+}
+
+#formComentario {
+    width: 100%;
+}
+
+#registroSi {
+    width: 2%;
+}
+
+#registroNo {
+    width: 2%;
+}
+
+#botonEnviar {
+    background-color: white;
+    width: 20%;
+    padding: 10px;
+    border: rgb(236, 185, 50) solid 5px;
+    border-radius: 40px;
+}
+
+#botonEnviar:hover {
+    color: rgb(255, 255, 255);
+    width: 20%;
+    background-color: rgb(236, 185, 50);
+    border: rgb(236, 185, 50) solid 5px;
+    border-radius: 40px;
+}
+
+caption h3 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style-image: url("../imagenes/ok.png")
+}
+
+.imgA {
+    width: 80%;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .bodydeco {
+        height: 100vh;
+        display: grid;
+        grid-gap: 15px;
+        grid-template-areas: 
+        "header header"
+        "prod01 prod02"
+        "prod03 prod04"
+        "prod05 prod06"
+        "instructivo instructivo"
+        "footer footer"
+        ;
+        padding: 0px 50px 0px 50px;
+    }
+
+    .logo-header {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+                
+    }
+    
+    .menu {
+        display: block;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+     
+    }
+
+    nav li {
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+            
+    }
+
+    nav ul {
+        list-style: none;
+        text-align: center;
+        padding: 15px 50px 0px 50px;
+  
+}
+
+.flexboxRow {
+    display: block;
+    
+}
+    
+@media only screen and (max-width: 400px) {
+
+    .bodydeco {
+        height: 100vh;
+        display: grid;
+        grid-gap: 15px;
+        grid-template-areas: 
+        "header header"
+        "prod01 prod02"
+        "prod03 prod04"
+        "prod05 prod06"
+        "instructivo instructivo"
+        "footer footer"
+        ;
+        padding: 0px 50px 0px 50px;
+    }
+
+    .logo-header {
+        display: block;
+        width: 50%;
+        padding: 15px 50px 0px 50px;
+        margin-left: auto;
+        margin-right: auto;
+                
+    }
+    
+    .menu {
+        display: block;
+        width: 100%;
+                
+    }
+
+    nav li {
+        display: block;
+            
+    }
+
+    nav ul {
+        list-style: none;
+        text-align: center;
+        padding: 15px 50px 0px 50px;
+    }
+
+}
+}
+
+.imgA:hover {
+    transform: scale(1.1)
+
+}
+
+h1 {
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+ }
+ 
+ 
+ @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+  
+ 
