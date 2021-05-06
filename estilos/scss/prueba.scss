@@ -688,6 +688,20 @@ textarea.input {
 
 @media only screen and (max-width: 600px) {
 
+    .info {
+        display: none;
+        position: absolute;
+        bottom: 0;
+        z-index: 10;
+        background: rgba(0, 0, 0, 0.5);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#50000000,endColorstr=#50000000);
+        color: #FFF;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+       }
+
     .contenido__flexboxRow {
         display: block;
         }
@@ -781,6 +795,20 @@ textarea.input {
 }
     
 @media only screen and (max-width: 400px) {
+
+    .info {
+        display: none;
+        position: absolute;
+        bottom: 0;
+        z-index: 10;
+        background: rgba(0, 0, 0, 0.5);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#50000000,endColorstr=#50000000);
+        color: #FFF;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+       }
 
     .contenido__flexboxRow {
         display: block;
@@ -1014,4 +1042,23 @@ textarea.input {
 
 .my-float{
 	margin-top:16px;
+}
+
+@media only screen and (max-width: 400px) {
+
+    .info {
+        display: none;
+        position: absolute;
+        bottom: 0;
+        z-index: 10;
+        background: rgba(0, 0, 0, 0.5);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#50000000,endColorstr=#50000000);
+        color: #FFF;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+        font-size: 00.8rem;
+       }
+
 }
